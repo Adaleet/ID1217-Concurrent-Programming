@@ -35,7 +35,7 @@ int main() {
     pthread_create(&threads[i], NULL, worker, &threads_ids[i]); 
 
     // Wait for threads to finish: 
-    for (int i = 0; i < NUM_THREADS; i++) {
+  for (int i = 0; i < NUM_THREADS; i++) {
       pthread_join(threads[i], NULL); 
     }
     // Read the end time after all threads have finished: 
